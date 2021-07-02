@@ -1,0 +1,30 @@
+# IntelliJ project files
+.idea/*
+
+# visual studio code files
+.vscode
+
+# Rust
+target/*
+
+# cargo
+.cargo/
+
+# profile
+flamegraph.*
+perf.*
+
+# tests
+*.stderr
+*.stdout
+*.out
+*.swp
+_logs/*
+
+# for tests in mac
+*.stderr-e
+*.stdout-e
+tests/perfs/*-result.json
+
+# python
+venv/
