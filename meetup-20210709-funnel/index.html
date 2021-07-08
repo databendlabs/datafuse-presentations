@@ -69,9 +69,11 @@
 (
     <span class="hljs-keyword">SELECT</span>
         user_id,
-        windowFunnel(<span class="hljs-number">6048000000000000</span>)(<span class="hljs-type">timestamp</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1003</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1009</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1007</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1010</span>) <span class="hljs-keyword">AS</span> level
+        windowFunnel(<span class="hljs-number">6048000000000000</span>)(<span class="hljs-type">timestamp</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1003</span>,
+	 eventID <span class="hljs-operator">=</span> <span class="hljs-number">1009</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1007</span>, eventID <span class="hljs-operator">=</span> <span class="hljs-number">1010</span>) <span class="hljs-keyword">AS</span> level
     <span class="hljs-keyword">FROM</span> trend
-    <span class="hljs-keyword">WHERE</span> (event_date <span class="hljs-operator">&gt;=</span> <span class="hljs-string">&#x27;2019-01-01&#x27;</span>) <span class="hljs-keyword">AND</span> (event_date <span class="hljs-operator">&lt;=</span> <span class="hljs-string">&#x27;2019-02-02&#x27;</span>)
+    <span class="hljs-keyword">WHERE</span> (event_date <span class="hljs-operator">&gt;=</span> <span class="hljs-string">&#x27;2019-01-01&#x27;</span>) <span class="hljs-keyword">AND</span>
+    	  (event_date <span class="hljs-operator">&lt;=</span> <span class="hljs-string">&#x27;2019-02-02&#x27;</span>)
     <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> user_id
 )
 <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> level
