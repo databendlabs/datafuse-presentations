@@ -23,20 +23,20 @@ paginate: true
 ## Window Funnel Analytics
 
 - [Introduction](#2)
-- [Implementaiton](#6)
+- [Implementation](#6)
 - [Works to do in datafuse](#11)
 
 ---
-### Intrduction
+### Introduction
 ![height:500px](assets/funnel1.png)
 
 ---
 
-### Intrduction
+### Introduction
 
 - 漏斗分析: 漏斗分析是对用户行为在特定转换路径的转化率分析
-- 基于用户行为的分析, 窗口分析
-- 分组计算量大
+- 基于用户行为的分析
+- 分组计算量大,状态依赖,窗口限定
 - 计算灵活, 路径自由, 支持下钻分析
 - 数据分析驱动优化产品设计
 
@@ -51,18 +51,18 @@ paginate: true
 ---
 ### Features
 
-- 用户行为独立, 个体之间不影响
-- 计算单一用户的最大Level深度
-- 高效的匹配算法
-- 状态合并
+- User action independent
+- Calculate the max level(depth) the user can reach in a sliding window
+- Efficient matching algorithm
+- State Merge
 
 
 ---
-### Implementaiton
+### Implementation
 
 - Group By -> sort to sorted events
-- Window Sequence Matching algorithm
-- Merge states
+- Aggregating: Window Sequence Matching algorithm
+- Aggregating: Merge states
 
 
 ---

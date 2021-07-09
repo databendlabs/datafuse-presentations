@@ -11,20 +11,20 @@
 <h2>Window Funnel Analytics</h2>
 <ul>
 <li><a href="#2">Introduction</a></li>
-<li><a href="#6">Implementaiton</a></li>
+<li><a href="#6">Implementation</a></li>
 <li><a href="#11">Works to do in datafuse</a></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="uncover" data-marpit-pagination="2" data-marpit-pagination-total="11" style="--paginate:true;--theme:uncover;">
-<h3>Intrduction</h3>
+<h3>Introduction</h3>
 <p><img src="assets/funnel1.png" alt="height:500px" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="uncover" data-marpit-pagination="3" data-marpit-pagination-total="11" style="--paginate:true;--theme:uncover;">
-<h3>Intrduction</h3>
+<h3>Introduction</h3>
 <ul>
 <li>漏斗分析: 漏斗分析是对用户行为在特定转换路径的转化率分析</li>
-<li>基于用户行为的分析, 窗口分析</li>
-<li>分组计算量大</li>
+<li>基于用户行为的分析</li>
+<li>分组计算量大,状态依赖,窗口限定</li>
 <li>计算灵活, 路径自由, 支持下钻分析</li>
 <li>数据分析驱动优化产品设计</li>
 </ul>
@@ -36,18 +36,18 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-theme="uncover" data-marpit-pagination="5" data-marpit-pagination-total="11" style="--paginate:true;--theme:uncover;">
 <h3>Features</h3>
 <ul>
-<li>用户行为独立, 个体之间不影响</li>
-<li>计算单一用户的最大Level深度</li>
-<li>高效的匹配算法</li>
-<li>状态合并</li>
+<li>User action independent</li>
+<li>Calculate the max level(depth) the user can reach in a sliding window</li>
+<li>Efficient matching algorithm</li>
+<li>State Merge</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="uncover" data-marpit-pagination="6" data-marpit-pagination-total="11" style="--paginate:true;--theme:uncover;">
-<h3>Implementaiton</h3>
+<h3>Implementation</h3>
 <ul>
 <li>Group By -&gt; sort to sorted events</li>
-<li>Window Sequence Matching algorithm</li>
-<li>Merge states</li>
+<li>Aggregating: Window Sequence Matching algorithm</li>
+<li>Aggregating: Merge states</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="uncover" data-marpit-pagination="7" data-marpit-pagination-total="11" style="--paginate:true;--theme:uncover;">
