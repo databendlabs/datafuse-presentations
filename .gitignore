@@ -1,6 +1,8 @@
 # IntelliJ project files
 .idea/*
 
+.DS_Store
+
 # visual studio code files
 .vscode
 
